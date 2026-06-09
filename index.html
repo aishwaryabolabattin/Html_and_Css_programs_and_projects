@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Attendance System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🎓 Student Attendance System</h1>
+
+    <div class="form">
+        <input type="text" id="name" placeholder="Student Name">
+        <input type="text" id="roll" placeholder="Roll Number">
+        <button class="add-btn" onclick="addStudent()">
+            Add Student
+        </button>
+    </div>
+
+    <input
+        type="text"
+        id="search"
+        class="search-box"
+        placeholder="🔍 Search Student..."
+        onkeyup="searchStudent()">
+
+    <div class="stats">
+        <div class="card">
+            <h2 id="total">0</h2>
+            <p>Total Students</p>
+        </div>
+
+        <div class="card">
+            <h2 id="presentCount">0</h2>
+            <p>Present</p>
+        </div>
+
+        <div class="card">
+            <h2 id="absentCount">0</h2>
+            <p>Absent</p>
+        </div>
+
+        <div class="card">
+            <h2 id="percentage">0%</h2>
+            <p>Attendance %</p>
+        </div>
+    </div>
+
+    <div class="progress-container">
+        <div class="progress">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Roll No</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+
+        <tbody id="studentTable"></tbody>
+    </table>
+
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

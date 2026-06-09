@@ -1,0 +1,157 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(-45deg,#667eea,#764ba2,#6dd5ed,#2193b0);
+    background-size:400% 400%;
+    animation:gradient 12s ease infinite;
+    padding:20px;
+}
+
+@keyframes gradient{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(15px);
+    border-radius:20px;
+    padding:25px;
+    box-shadow:0 8px 32px rgba(0,0,0,0.2);
+}
+
+h1{
+    text-align:center;
+    color:white;
+    margin-bottom:20px;
+}
+
+.form{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    justify-content:center;
+    margin-bottom:20px;
+}
+
+input{
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    width:250px;
+}
+
+button{
+    padding:12px 18px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:bold;
+    transition:.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+.add-btn{
+    background:#00e676;
+    color:white;
+}
+
+.search-box{
+    display:block;
+    margin:15px auto;
+    width:300px;
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:15px;
+    margin:20px 0;
+}
+
+.card{
+    background:rgba(255,255,255,0.2);
+    padding:20px;
+    text-align:center;
+    border-radius:15px;
+    color:white;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.progress{
+    height:25px;
+    background:#ddd;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.progress-bar{
+    height:100%;
+    width:0%;
+    background:limegreen;
+    transition:1s;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+th{
+    background:rgba(255,255,255,0.3);
+    color:white;
+}
+
+th,td{
+    padding:12px;
+    text-align:center;
+    color:white;
+}
+
+.present{
+    color:#00ff95;
+    font-weight:bold;
+}
+
+.absent{
+    color:#ff4d4d;
+    font-weight:bold;
+}
+
+.toggle-btn{
+    background:#2196f3;
+    color:white;
+}
+
+.delete-btn{
+    background:#ff5252;
+    color:white;
+}
+
+.toast{
+    position:fixed;
+    top:20px;
+    right:20px;
+    background:#333;
+    color:white;
+    padding:15px;
+    border-radius:10px;
+    display:none;
+}
