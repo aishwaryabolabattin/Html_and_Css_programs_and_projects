@@ -3,76 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Attendance System</title>
+    <title>Attractive Navbar</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="container">
+    <nav class="navbar">
+        <div class="logo">Python</div>
 
-    <h1>🎓 Student Attendance System</h1>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
 
-    <div class="form">
-        <input type="text" id="name" placeholder="Student Name">
-        <input type="text" id="roll" placeholder="Roll Number">
-        <button class="add-btn" onclick="addStudent()">
-            Add Student
-        </button>
+        <button id="btn">Login</button>
+    </nav>
+
+    <div class="hero">
+        <h1>Welcome to Python</h1>
+        <p>Learn New Skills and Build Your Future</p>
     </div>
 
-    <input
-        type="text"
-        id="search"
-        class="search-box"
-        placeholder="🔍 Search Student..."
-        onkeyup="searchStudent()">
-
-    <div class="stats">
-        <div class="card">
-            <h2 id="total">0</h2>
-            <p>Total Students</p>
-        </div>
-
-        <div class="card">
-            <h2 id="presentCount">0</h2>
-            <p>Present</p>
-        </div>
-
-        <div class="card">
-            <h2 id="absentCount">0</h2>
-            <p>Absent</p>
-        </div>
-
-        <div class="card">
-            <h2 id="percentage">0%</h2>
-            <p>Attendance %</p>
-        </div>
-    </div>
-
-    <div class="progress-container">
-        <div class="progress">
-            <div class="progress-bar" id="progressBar"></div>
-        </div>
-    </div>
-
-    <table>
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Roll No</th>
-                <th>Status</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-
-        <tbody id="studentTable"></tbody>
-    </table>
-
-</div>
-
-<div class="toast" id="toast"></div>
-
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>
