@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            animation: changeColor 3s infinite;
+            animation-name: moveRight;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation: bounce 2s infinite;
+            animation: move 2s infinite;
+			animation-direction: alternate;
+            animation: spin 4s linear infinite;
+            animation-play-state: paused;
+             animation: move 2s ease-in 1s infinite alternate forwards;
+            
+        }
+        @keyframes changeColor{
+            from{
+                background-color: blue;
+            }
+            to{
+                background-color: red;
+            }
+        }
+        @keyframes moveRight{
+            from{
+                transform: translateX(0);
+            }
+            to{
+                transform: translateX(200px);
+            }
+        }
+        @keyframes fadeIn{
+            from{
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
+            }
+        }
+        @keyframes bounce {
+			0% {
+				transform: translateY(0);
+			}
+
+			50% {
+				transform: translateY(-50px);
+			}
+
+			100% {
+				transform: translateY(0);
+			}
+		}
+        @keyframes move {
+			from {
+				transform: translateX(0);
+			}
+
+			to {
+				transform: translateX(200px);
+			}
+		}
+        .box:hover {
+            animation-play-state: running;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes move {
+            from {
+                transform: translateX(0);
+                background-color: blue;
+            }
+            to {
+                transform: translateX(200px);
+                background-color: green;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+     <div class="box">  </div>
+</body>
+</html>
